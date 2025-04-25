@@ -24,6 +24,6 @@ jobs:
 
       - name: Run health check
         env:
-          EMAIL_ADDRESS : ${{ secrets.EMAIL_ADDRESS  }}
+          EMAIL_ADDRESS : ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python health-check.py
