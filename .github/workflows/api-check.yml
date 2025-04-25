@@ -23,4 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run health check
+        env:
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python health-check.py
