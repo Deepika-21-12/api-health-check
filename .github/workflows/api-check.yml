@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+      EMAIL_ADDRESS : ${{ secrets.EMAIL_PASSWORD }}
       EMAIL_USERNAME: ${{ secrets.EMAIL_ADDRESS }}
 
     steps:
@@ -24,6 +24,6 @@ jobs:
 
       - name: Run health check
         env:
-          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_ADDRESS : ${{ secrets.EMAIL_ADDRESS  }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python health-check.py
