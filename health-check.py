@@ -41,7 +41,7 @@ def send_mail(url, error_message):
             server.login(sender_email, app_password)
             msg = create_mail_body(url, error_message)
             print(f"Message : {msg}")
-            # server.sendmail(sender_email, receiver_email, msg)
+            server.sendmail(sender_email, receiver_email, msg)
             print("Email sent successfully!")
     except Exception as e:
         print(f"Failed to send email: {e}")
