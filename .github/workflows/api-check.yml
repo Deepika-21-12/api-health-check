@@ -11,7 +11,7 @@ jobs:
 
     env:
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-      EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+      EMAIL_USERNAME: ${{ secrets.EMAIL_ADDRESS }}
 
     steps:
       - name: Checkout code
