@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 sender_email = os.environ.get("EMAIL_ADDRESS")     #"deepikapalanisamy2001@gmail.com"
 receiver_email = "deepikaadeepi01@gmail.com"     # Can be the same or different
 app_password = os.environ.get("EMAIL_PASSWORD")    #"tjhv ciwn qjjr zswk"  
-url = "http://localhost:7001/invivodb/design/dataCollection.action?studyId=106331&fromHomePage=1"
+url = "https://invivodb.rd.astrazeneca.net:7011/invivodb/study/josso_login.jsp"
 
 
 def check_api_health(url):
